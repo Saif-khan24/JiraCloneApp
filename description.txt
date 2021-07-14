@@ -1,0 +1,2 @@
+made using html, css, bootstrap, js, dom, 
+mediaqueries, responsiveness, local storage
