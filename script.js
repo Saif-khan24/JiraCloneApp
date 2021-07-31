@@ -2,7 +2,6 @@
 let allfilters = document.querySelectorAll('.filter div');
 let grid = document.querySelector('.grid');
 
-
 let colors = {
     pink: '#fdd5db',
     blue: '#a2e9f2',
@@ -207,7 +206,7 @@ function ticketWritingAreaHandler(e){
     localStorage.setItem('tasks', JSON.stringify(tasksArr));
 }
 
-let loadTasks =(passedColor)=>{
+let loadTasks = (passedColor)=>{
     let allTickets = document.querySelectorAll('.ticket');
     for(let t=0; t<allTickets.length; t++)
     allTickets[t].remove();
@@ -249,13 +248,11 @@ let loadTasks =(passedColor)=>{
                 tasksArr = tasksArr.filter(function(el){
                     return el.id != id;
                 });
-
                 localStorage.setItem('tasks', JSON.stringify(tasksArr));
 
                 e.currentTarget.remove();
             }
         });
-
         grid.appendChild(ticket);
     }
     
